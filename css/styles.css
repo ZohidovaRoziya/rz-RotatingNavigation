@@ -3,7 +3,7 @@
 
 /* CUSTOM PROPS CSS START  */
 :root {
-  --primary-color: #333;
+  --primary-color: #f96969;
   --text-color: #222;
 }
 
@@ -60,7 +60,6 @@ img {
 }
 
 /* MAIN PAGE CSS CODE START  */
-
 .container.show-nav {
   transform: rotate(-20deg);
 }
@@ -70,18 +69,18 @@ img {
   transition-delay: 0.3s;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .circle-container {
   position: fixed;
   top: -100px;
   left: -100px;
 }
 
-.container.show-nav .circle {
-  transform: rotate(-70deg);
-}
-
 .circle {
-  background-color: #ff7979;
+  background-color: #eb5353;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -91,14 +90,14 @@ img {
 
 .circle button {
   position: absolute;
-  cursor: pointer;
-  top: 50%;
   left: 50%;
+  top: 50%;
   height: 100px;
   background-color: transparent;
   border: 0;
   color: #fff;
   font-size: 26px;
+  cursor: pointer;
 }
 
 .circle button:focus {
@@ -131,16 +130,24 @@ img {
 }
 
 .content-text {
+  padding-top: 20px;
   color: #333;
   line-height: 1.5;
 }
-.contenet-img {
+
+.content-title {
+  margin-top: 10px;
+  color: #eb5353;
+}
+
+.content-img {
   display: flex;
   width: 100%;
-  height: 250px;
+  height: 400px;
   object-fit: cover;
 }
 
+/* SITE NAVBAR CSS CODE START  */
 .sitenav {
   position: fixed;
   bottom: 40px;
@@ -155,12 +162,6 @@ img {
   padding-left: 30px;
 }
 
-.sitenav-item {
-  margin: 40px 0;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease-in;
-}
-
 .sitenav-list li + li {
   margin-left: 15px;
   transform: translateX(-150%);
@@ -171,10 +172,16 @@ img {
   transform: translateX(-200%);
 }
 
+.sitenav-item {
+  margin: 40px 0;
+  transition: transform 0.4s ease-in;
+  transform: translateX(-100%);
+}
+
 .sitenav-link {
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .sitenav-link:hover {
