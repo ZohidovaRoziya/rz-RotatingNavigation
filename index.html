@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
 
-    <!-- STYLESHEEET CSS LINK  -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotating Navigation</title>
+        
+        <!-- FONT AWESOME LINK  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- STYLESHEEET CSS LINK  -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        </head>
 
-    <!-- JAVA SCRIPT LINK  -->
-    <script src="./JS/main.js"></script>
-</body>
+    <body>
+        <!-- MAIN PAGE CODE START  -->
+        <div class="container">
+            <div class="circle-container">
+                <div class="circle">
+                    <button id="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <div class="content">
+                <h1 class="content-heading">Amazing Article</h1>
+                <span class="content-author">Florin Pou</span>
+                <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum amet nulla
+                    incidunt omnis
+                    aperiam voluptates saepe ad doloribus, aliquid porro nostrum excepturi, animi cupiditate iusto
+                    magnam qui facere
+                    eveniet non assumenda ia architecto enim fugiat quaerat id provident corporis, quae vel, ex
+                    voluptate
+                    reprehenderit? Incidunt corporis, expedita ab repudiandae quam perspiciatis quasi dignissimos odit
+                    modi. Cum in
+                    ducimus quod, aliquam mollitia quae necessitatibus maiores, culpa, illum accusamus enim ipsa sit
+                    natus non harum
+                    laudantium. Quae voluptas quasi molestias ipsam illo?</p>
+                <h2 class="content-title">I Love Rain</h2>
+
+                <img class="content-img" src="./images/rain.jpg" alt="Raning City">
+                <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto accusamus
+                    aliquam blanditiis
+                    nesciunt aspernatur assumenda, magnam qui! Rerum, molestiae. Minus quibusdam deleniti,
+                    exercitationem, numquam quo
+                    perspiciatis ad aperiam blanditiis, quae ea voluptate. Autem, dignissimos qui!</p>
+                </div>
+                </div>
+
+        <!-- SITE NAVBAR CODE START  -->
+        <nav class="sitenav">
+            <ul class="sitenav-list">
+                <li class="sitenav-item">
+                    <a class="sitenav-link" href="#">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="sitenav-item">
+                    <a class="sitenav-link" href="#">
+                        <i class="fas fa-user-alt"></i>
+                        About
+                    </a>
+                </li>
+                <li class="sitenav-item">
+                    <a class="sitenav-link" href="#">
+                        <i class="fas fa-envelope"></i>
+                        Connect
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- JAVA SCRIPT LINK  -->
+        <script src="./JS/main.js"></script>
+        </body>
+
 </html>
